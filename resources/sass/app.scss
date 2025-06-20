@@ -137,7 +137,7 @@ body {
 
 .block-for-title-task {
     text-align: center;
-    padding: 10px 10px;
+    padding: 15px 0;
     border: 1px solid #cbd5e0;
 }
 
@@ -166,4 +166,214 @@ body {
 .block-icons-task-value a {
     margin-right: 15px;
     color: #282aa2;
+}
+
+.block-title-task-value h1 {
+    color: #cbd5e0;
+    font-weight: 600;
+}
+
+.block-date-task-value p {
+    color: #cbd5e0;
+    font-weight: 600;
+}
+
+.block-status-task-value p {
+    color: #cbd5e0;
+    font-weight: 600;
+}
+
+.fa-eye {
+    color: #cbd5e0;
+}
+
+.fa-eye:hover {
+    color: #538dd7;
+}
+
+.fa-pen {
+    color: #cbd5e0;
+}
+
+.fa-pen:hover {
+    color: #538dd7;
+}
+
+.fa-trash {
+    color: #cbd5e0;
+}
+
+.fa-trash:hover {
+    color: #538dd7;
+}
+
+.block-create-tasks {
+    margin-top: 15px;
+    width: 120px;
+}
+
+.block-create-tasks a {
+    color: #cbd5e0;
+    font-size: 15px;
+    background-color: #4b71d6;
+    padding: 2px 10px 4px 10px;
+}
+
+.block-create-tasks a:hover {
+    background-color: #3f60b4;
+}
+
+.fa-plus {
+    font-size: 14px;
+}
+
+
+// Код для блока просмотра списка.
+
+.block-main-look-at-task {
+    margin: 10% auto;
+    width: 550px;
+}
+
+.block-look-task {
+    background-color: #ffffff;
+}
+
+// 1
+.block-look-id-task {
+    display: flex;
+    padding: 19px 10px 19px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.block-look-value-id-task-1 {
+    width: 50px;
+}
+
+.block-look-value-id-task-2 {
+    width: 470px;
+}
+
+// 2
+.block-look-title-task {
+    display: flex;
+    padding: 19px 10px 19px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.block-look-value-title-task-1 {
+    width: 100px;
+}
+
+.block-look-value-title-task-2 {
+    width: 430px;
+}
+
+// 3
+.block-look-description-task {
+    display: flex;
+    padding: 19px 10px 19px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.block-look-value-description-task-1 {
+    width: 100px;
+}
+
+.block-look-value-description-task-2 {
+    width: 430px;
+}
+
+// 4
+.block-look-status-task {
+    display: flex;
+    padding: 19px 10px 19px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.block-look-value-status-task-1 {
+    width: 100px;
+}
+
+.block-look-value-status-task-2 {
+    width: 430px;
+}
+
+// 5
+.block-look-file-task {
+    display: flex;
+    padding: 19px 10px 19px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.block-look-value-file-task-1 {
+    width: 100px;
+}
+
+.block-look-value-file-task-2 {
+    width: 430px;
+}
+
+// 6
+.block-look-date-task {
+    display: flex;
+    padding: 19px 10px 19px 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.block-look-value-date-task-1 {
+    width: 100px;
+}
+
+.block-look-value-date-task-2 {
+    width: 430px;
+}
+
+
+// Код для блока добавления списка
+
+.block-create-task-main {
+    margin: 10% auto;
+    width: 420px;
+}
+
+.block-create-task-general {
+    padding: 20px 15px;
+    background-color: #cbd5e0;
+    border-radius: 15px;
+}
+
+.block-create-task {
+    margin-bottom: 20px;
+}
+
+.block-create-task p {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.block-create-task input {
+    width: 390px;
+    height: 25px;
+    border-radius: 9px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.block-create-task-button {
+    margin-top: 10px;
+}
+
+.block-create-task-button button {
+    width: 420px;
+    height: 27px;
+    border-radius: 10px;
+    background-color: #282aa2;
+    color: #cbd5e0;
+    font-weight: 600;
+}
+
+.block-create-task-button button:hover {
+    color: #1a202c;
+    background-color: #cbd5e0;
 }
