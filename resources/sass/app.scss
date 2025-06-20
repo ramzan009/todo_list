@@ -75,7 +75,9 @@ body {
 // Код для блока меню
 
 .block-for-menu {
-    margin: 20px auto;
+    margin: 0 auto;
+    position: relative;
+    top: 2%;
     width: 900px;
     height: 35px;
     background-color: #cbd5e0;
@@ -111,6 +113,15 @@ body {
     margin-left: 20px;
 }
 
+.block-for-icons-search a{
+    color: #282aa2;
+    font-size: 16px;
+}
+
+.block-for-icons-search i{
+    font-size: 13px;
+}
+
 .block-for-icons-user a {
     color: #282aa2;
 }
@@ -131,7 +142,7 @@ body {
 // Код для блока списка
 
 .block-main-task {
-    margin: 1% auto;
+    margin: 2% auto;
     width: 900px;
 }
 
@@ -148,7 +159,6 @@ body {
 }
 
 .block-value-task {
-
     border: 1px solid #cbd5e0;
 }
 
@@ -231,12 +241,14 @@ body {
 // Код для блока просмотра списка.
 
 .block-main-look-at-task {
-    margin: 10% auto;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
     width: 550px;
 }
 
 .block-look-task {
-    background-color: #ffffff;
+    background-color: #cbd5e0;
 }
 
 // 1
@@ -330,10 +342,35 @@ body {
 }
 
 
+// Код для блока изменения
+
+.block-for-update-task {
+    margin-top: 5px;
+}
+
+.block-for-update-task button {
+    width: 150px;
+    height: 24px;
+    background-color: #3f60b4;
+    color: #ffffff;
+}
+
+.block-for-update-task button:hover {
+    background-color: #cbd5e0;
+    color: #1a202c;
+}
+
+.block-look-value-title-task-2 input {
+    outline: none;
+    padding-left: 5px;
+}
+
 // Код для блока добавления списка
 
 .block-create-task-main {
-    margin: 10% auto;
+    margin: 0 auto;
+    position: relative;
+    top: 23%;
     width: 420px;
 }
 
@@ -360,6 +397,13 @@ body {
     padding-left: 10px;
 }
 
+.block-create-task textarea {
+    border-radius: 9px;
+    outline: none;
+    padding-left: 10px;
+    max-width: 390px;
+}
+
 .block-create-task-button {
     margin-top: 10px;
 }
@@ -376,4 +420,85 @@ body {
 .block-create-task-button button:hover {
     color: #1a202c;
     background-color: #cbd5e0;
+}
+
+
+.block-create-task a {
+    font-size: 13px;
+    color: #000000;
+}
+
+.block-create-task a:hover {
+    color: #3f60b4;
+}
+
+// Код для блока войти
+
+.block-main-for-login {
+    margin: 0 auto;
+    position: relative;
+    top: 45%;
+    transform: translate(0%, -50%);
+    width: 430px;
+}
+
+.block-for-login-value {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #cbd5e0;
+}
+
+.block-h1-for-login h1 {
+    text-align: center;
+    font-size: 19px;
+    padding: 15px 0;
+    border-bottom: 1px solid #636b6f;
+}
+
+.block-login-tasks {
+    margin-top: 25px;
+}
+
+.block-login-tasks p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.block-login-tasks input {
+    width: 390px;
+    height: 28px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.block-register-a {
+    margin: 20px 0 10px 0;
+}
+
+.block-register-a a {
+    font-size: 14px;
+    color: #000000;
+}
+
+.block-register-a a:hover {
+    color: #3f60b4;
+    border-bottom: 1px solid #3f60b4;
+}
+
+.block-login-button {
+    margin-top: 10px;
+}
+
+.block-login-button button {
+    width: 432px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #4b71d6;
+    color: #ffffff;
+}
+
+.block-login-button button:hover {
+    background-color: #3f60b4;
+    color: #ffffff;
 }

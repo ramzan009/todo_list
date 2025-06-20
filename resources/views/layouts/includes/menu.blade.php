@@ -6,6 +6,9 @@
             <a href="#">Старый</a>
         </div>
         <div class="block-for-entry-and-exit">
+            <div class="block-for-icons-search">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i> Поиск</a>
+            </div>
             <div class="block-for-icons-user">
                 <a href=""><i class="fa-solid fa-user"></i> Рамзан</a>
             </div>

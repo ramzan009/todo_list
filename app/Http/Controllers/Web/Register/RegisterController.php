@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Web\Login;
+namespace App\Http\Controllers\Web\Register;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\View\Factory;
@@ -8,17 +8,17 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
-class LoginController extends Controller
+class RegisterController extends Controller
 {
 
     /**
-     * Страница входа.
+     * Страница регистрации
      *
      * @return Factory|View|Application|object
      */
     public function index()
     {
-        return view('login.login');
+        return view('register.register');
     }
 
 }
