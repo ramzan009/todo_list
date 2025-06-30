@@ -10,16 +10,25 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
+    /**
+     * Для отображения создания задачи
+     *
+     * @return Factory|View|Application|object
+     */
     public function index()
     {
         return view('task.task');
     }
 
+    /**
+     * Для создания задачи
+     *
+     * @return Factory|View|Application|object
+     */
     public function create()
     {
         return view('task.create');
     }
-
 
     /**
      * Страница обновления эадачи.
@@ -32,6 +41,12 @@ class TaskController extends Controller
         return view('task.update');
     }
 
+    /**
+     * Для удаления задачи
+     *
+     * @param Request $request
+     * @return void
+     */
     public function delete(Request $request)
     {
         //

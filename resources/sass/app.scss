@@ -113,12 +113,12 @@ body {
     margin-left: 20px;
 }
 
-.block-for-icons-search a{
+.block-for-icons-search a {
     color: #282aa2;
     font-size: 16px;
 }
 
-.block-for-icons-search i{
+.block-for-icons-search i {
     font-size: 13px;
 }
 
@@ -138,6 +138,35 @@ body {
     color: brown;
 }
 
+
+// Код для поиска
+
+.block-main-search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+
+.block-search-task input {
+    width: 500px;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.block-search-task button {
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.block-search-task button:hover {
+    background-color: #3f60b4;
+    color: #cbd5e0;
+}
 
 // Код для блока списка
 
