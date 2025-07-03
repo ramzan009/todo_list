@@ -1,3 +1,4 @@
+@php use Illuminate\Support\Facades\Auth; @endphp
 <div class="block-for-menu">
     <div class="block-for-style">
         <div class="block-menu">
@@ -10,10 +11,10 @@
                 <a href="{{ route('search') }}"><i class="fa-solid fa-magnifying-glass"></i> Поиск</a>
             </div>
             <div class="block-for-icons-user">
-                <a href=""><i class="fa-solid fa-user"></i> Рамзан</a>
+                <a href=""><i class="fa-solid fa-user"></i>{{ Auth::user()->name }}</a>
             </div>
             <div class="block-for-icons-exit">
-                <a href=""><i class="fa-solid fa-right-from-bracket"></i> Выйти</a>
+                <a href="{{ route('logout') }}"><i class="fa-solid fa-right-from-bracket"></i> Выйти</a>
             </div>
         </div>
     </div>
