@@ -3,11 +3,14 @@
 @section('content')
     <div class="block-create-task-main">
 
-        <form action="" method="POST">
+        <form action="{{ route('task.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="block-create-task-general">
                 <div class="block-create-task">
                     <p>Заголовка</p>
+                    @error('title')
+                    <label class="error-label" for="form2Example18">{{ $message }}</label>
+                    @enderror
                     <input name="title" type="text" placeholder="Введите заголовок задачи...">
                 </div>
                 <div class="block-create-task">
@@ -16,10 +19,16 @@
                 </div>
                 <div class="block-create-task">
                     <p>Вложения</p>
-                    <input name="file_path" type="file">
+                    @error('file_path')
+                    <label class="error-label" for="form2Example18">{{ $message }}</label>
+                    @enderror
+                    <input name="file_path[]" type="file" multiple>
                 </div>
                 <div class="block-create-task">
                     <p>Дата</p>
+                    @error('date')
+                    <label class="error-label" for="form2Example18">{{ $message }}</label>
+                    @enderror
                     <input name="date" type="date">
                 </div>
                 <div class="block-create-task">

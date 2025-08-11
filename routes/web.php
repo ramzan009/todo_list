@@ -15,10 +15,15 @@ Route::post('/registration', [RegisterController::class, 'create'])->name('regis
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/', [MainController::class, 'main'])->name('main');
-    Route::get('/task', [TaskController::class, 'index'])->name('task');
     Route::get('/task/create', [TaskController::class, 'create'])->name('task.create');
-    Route::get('/task/update', [TaskController::class, 'update'])->name('task.update');
-    Route::get('/task/delete', [TaskController::class, 'delete'])->name('task.delete');
+    Route::post('/task/store', [TaskController::class, 'store'])->name('task.store');
+    Route::get('/task/{id}', [TaskController::class, 'index'])->name('task');
+    Route::get('/task/update/{id}', [TaskController::class, 'update'])->name('task.update');
+
+    Route::put('/task/update/{task}', [TaskController::class, 'taskUpdate'])->name('task.update.put');
+
+
+    Route::get('/task/delete/{id}', [TaskController::class, 'delete'])->name('task.delete');
     Route::get('/search', [SearchController::class, 'index'])->name('search');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });

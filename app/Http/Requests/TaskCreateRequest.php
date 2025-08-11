@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
-class LoginRequest extends FormRequest
+class TaskCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,15 +23,25 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email'    => [
+            'title'       => [
                 'required',
-                'email',
                 'string',
-                'exists:' . User::class . ',email',
+                'min:5'
             ],
-            'password' => [
+            'description' => [
+                'nullable',
+                'string',
+            ],
+            'file_path'   => [
+                'nullable',
+                'array'
+            ],
+            'file_path.*'   => [
+                'file',
+            ],
+            'date'        => [
                 'required',
-                'integer'
+                'date'
             ]
         ];
     }

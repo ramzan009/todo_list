@@ -198,6 +198,10 @@ body {
     border-bottom: 1px solid #cbd5e0;
 }
 
+.block-title-task-value {
+    width: 150px;
+}
+
 .block-icons-task-value {
     margin-right: 10px;
 }
@@ -537,4 +541,23 @@ body {
     font-size: 13px;
     font-weight: 600;
     line-height: 20px;
+}
+
+// Код для фильтра
+
+.select-filter-task {
+    width: 100px;
+    height: 20px;
+}
+
+.filter-button {
+    width: 100px;
+    background-color: #3f60b4;
+    font-size: 12px;
+    padding: 2px 3px 2px 3px;
+}
+
+.filter-button:hover {
+
+    color: #cbd5e0;
 }
