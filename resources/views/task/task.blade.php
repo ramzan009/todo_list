@@ -3,13 +3,12 @@
 @section('content')
 <div class="block-main-look-at-task">
     <div class="block-look-task">
-
         <div class="block-look-id-task">
             <div class="block-look-value-id-task-1">
                 <h1>id :</h1>
             </div>
             <div class="block-look-value-id-task-2">
-                <p>2</p>
+                <p>{{ $task->id }}</p>
             </div>
         </div>
         <div class="block-look-title-task">
@@ -17,7 +16,7 @@
                 <h1>Заголовок :</h1>
             </div>
             <div class="block-look-value-title-task-2">
-                <p>Выпить кофээ</p>
+                <p>{{ $task->title }}</p>
             </div>
         </div>
         <div class="block-look-description-task">
@@ -25,7 +24,7 @@
                 <h1>Описания :</h1>
             </div>
             <div class="block-look-value-description-task-2">
-                <p>Выпить кофээ</p>
+                <p>{{ $task->description }}</p>
             </div>
         </div>
         <div class="block-look-status-task">
@@ -33,7 +32,7 @@
                 <h1>Статус :</h1>
             </div>
             <div class="block-look-value-status-task-2">
-                <p>Новый</p>
+                <p>{{ $task->status }}</p>
             </div>
         </div>
         <div class="block-look-file-task">
@@ -41,7 +40,10 @@
                 <h1>Вложения :</h1>
             </div>
             <div class="block-look-value-file-task-2">
-                <p>Новый</p>
+                @foreach($task->attachments as $tas)
+                    <a href="{{ asset('storage/' . $tas->file_path)  }}" target="_blank">{{ $tas->file_name }}</a>
+                @endforeach
+
             </div>
         </div>
         <div class="block-look-date-task">
@@ -49,10 +51,11 @@
                 <h1>Дата :</h1>
             </div>
             <div class="block-look-value-date-task-2">
-                <p>05-12-2025</p>
+                <p>{{ $task->date}}</p>
             </div>
         </div>
 
     </div>
+
 </div>
 @endsection

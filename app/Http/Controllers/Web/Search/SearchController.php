@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Web\Search;
 
 use App\Http\Controllers\Controller;
+use App\Models\Task;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -16,8 +17,11 @@ class SearchController extends Controller
      *
      * @return Factory|View|Application|object
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('search.search');
+        $data = $request->input('search');
+        $searches = Task::query()->where('title', 'LIKE', "%{$data}%")->get();
+        return view('search.search', compact('searches'));
     }
+
 }
